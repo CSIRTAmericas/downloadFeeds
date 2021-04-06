@@ -4,9 +4,9 @@ This script was made in **python 3** in order to download the feeds provided by 
 
 
 ## Installation
-You must first install python3
+In order to use the script you must have python3 installed, in case you do not have it installed, you can check this [link](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-20-04-server-es) 
 
-Now you should install **pip3**
+The first step is to install **pip3**
 
 ```bash
 sudo apt install python3-pip
@@ -23,7 +23,7 @@ pip3 install pytz
 ## Usage
 
 ```bash
-$ git clone https://github.com/Nelsonwgc/downloadFeeds.git
+$ git clone https://github.com/CSIRTAmericas/downloadFeeds.git
 $ cd downloadFeeds
 # Modify downloadFeed.py, specifically for:
 # 1) FTPUSER, FTPPASS, FTPSERVER: This data is provided by CSIRTAmericas.
@@ -43,6 +43,7 @@ $ sudo crontab -e
 # Now you must place the following code at the bottom of the page 
 */30 7-18 1-7 * * timeout 180 /path/to/script/downloadFeed.py
 ```
+![auto](https://user-images.githubusercontent.com/29242324/113741787-9bb63500-96c7-11eb-94d3-515db276ba14.gif)
 
 ## Help/Questions/Comments:
 For help or more info, feel free to contact Nelson Guanilo: nguanilo@csirtamericas.org
