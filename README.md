@@ -4,12 +4,21 @@ This script was made in **python 3** in order to download the feeds provided by 
 
 
 ## Installation
+You must first install python3
+
+Now you should install **pip3**
+
+```bash
+sudo apt install python3-pip
+```
+![downloadpip3](https://user-images.githubusercontent.com/29242324/113663885-6b8f7780-9670-11eb-9e5f-4764ac27dd7b.gif)
 
 Use the package manager [pip3](https://pip.pypa.io/en/stable/) to install pytz.
 
 ```bash
 pip3 install pytz
 ```
+![pytz](https://user-images.githubusercontent.com/29242324/113663905-76e2a300-9670-11eb-89a2-f8994b93ad60.gif)
 
 ## Usage
 
@@ -21,6 +30,9 @@ $ cd downloadFeeds
 # 2) DSTFOLDER: Destination folder for feeds. Ex: /home/user/python || D:\\python
 $ python3 downloadFeeds.py
 ```
+
+![downFeedsCsir](https://user-images.githubusercontent.com/29242324/113663930-7fd37480-9670-11eb-93f5-c68907a305df.gif)
+
 ## Automation
 
 We recommend that you use a crontab to automate this download.
