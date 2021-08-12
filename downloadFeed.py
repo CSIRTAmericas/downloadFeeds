@@ -94,6 +94,9 @@ def getTodayFiles(list_file,ftp,dict_file,today,dire):
                     break
             except Exception as e:
                 print("Error: ", e)
+        
+        elif "csv" in file:
+            continue
 
         else:
             if dire == "/":
@@ -106,7 +109,7 @@ def getTodayFiles(list_file,ftp,dict_file,today,dire):
 def main(dict_file,today,path,ftp):
     try:    
         for dire in path:
-            if dire != "/":
+            if dire != "/" and "discontinued" not in dire:
                 ftp.cwd('/'+dire+'/')
             list_file =  ftp.nlst()
             list_file = sorted(list_file,reverse=True)
